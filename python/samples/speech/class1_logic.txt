@@ -1,0 +1,41 @@
+from subprocess import call
+
+def say(speech):
+    call(['espeak', speech])
+
+def main():
+    loops=5
+    loopcount = 0
+    while loopcount < loops:
+        if loopcount == 3:
+            say("alarming")
+        name = "josiah"
+        print("testing josiah")
+        if name == "josiah":
+            say(name)
+        else:
+            say("i do not know you")
+
+        print("testing josiah2")
+        if name == "josiah2":
+            say(name)
+        else:
+            say("i do not know you")
+
+        loopcount += 1
+# comment
+if __name__ == "__main__":
+    main()
+
+
+public int main() {
+    int loops = 5;
+    int loopcounts = 0;
+
+   while(loopcount < loops) {
+       if(loopcount == 3) {
+           // do something;
+       }
+   }
+}
+}
